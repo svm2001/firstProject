@@ -1,0 +1,164 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #020024;
+    background-image:
+
+                /*Звездное небо*/
+
+            radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+            radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+            radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+            radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+    background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+    background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+    display: flex;
+    flex-direction: column;
+}
+.winterMan {
+    position: absolute;
+    top: 250px;
+    left: 200px;
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: black;
+    box-shadow:
+
+                /*Луна*/
+
+            35px 0 0 0 black,
+            -42px -165px 109px 99px yellow,
+            -40px -165px 2px 43px yellow,
+            637px -247px 37px 30px dimgrey,
+
+                /*Рот и пуговицы*/
+
+            17px 99px 2px 2px black,
+            17px 129px 2px 2px black,
+            17px 159px 2px 2px black,
+            38px 30px 0 -2px black,
+            -4px 30px 0 -2px black,
+            29px 36px 0 -2px black,
+            6px 35px 0 -2px black,
+            18px 40px 0 -2px black,
+
+                /*Туловище*/
+
+            17px -12px 79px 52px white,
+            17px 19px 0 43px deepskyblue,
+            17px 100px 80px 68px white,
+            17px 136px 0 79px deepskyblue,
+            17px 222px 79px 65px white,
+            17px 261px 0 98px deepskyblue,
+
+                /*Ноги*/
+
+            84px 332px 0px 26px gray,
+            -49px 332px 0 26px gray;
+}
+.winterMan::before{
+
+                /*Нос*/
+
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 17px;
+    border: 5px solid transparent;
+    border-left: 37px solid orangered;
+    border-radius: 190px;
+
+                /*Шапка*/
+
+    box-shadow: -18px -53px 14px -1px white,
+                -19px -53px 0 19px orangered;
+}
+.winterMan::after {
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background-color: black;
+    border: 1px solid black;
+    transform: rotate(45deg) translate(127px, 1px);
+
+                /*Руки (ужас! ><)*/
+
+    box-shadow:
+            0 -12px 0 0 black,
+            0 -23px 0 0 black,
+            0 -34px 0 0 black,
+            0 -45px 0 0 black,
+            3px -52px 0 -2px black,
+            4px -52px 0 -2px black,
+            6px -52px 0 -2px black,
+            8px -52px 0 -2px black,
+            10px -52px 0 -2px black,
+            12px -52px 0 -2px black,
+            1px -52px 0 -2px black,
+            0 -59px 0 0 black,
+            0 -51px 0 0 black,
+            -103px 100px 0 0 black,
+            -114px 100px 0 0 black,
+            -125px 100px 0 0 black,
+            -136px 100px 0 0 black,
+            -147px 100px 0 0 black,
+            -157px 100px 0 0 black,
+            -146px 110px 0 0 black,
+            -146px 120px 0 0 black,
+            10px -48px 0 0 black,
+            16px -48px 0 0 black,
+            16px -50px 0 0 black;
+
+}
+.window {
+
+                /*Окно*/
+
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 11px solid sienna;
+    left: 700px;
+    top: 378px;
+    background: linear-gradient(to bottom, yellow 50%, black 55%, yellow 0, brown 87%);
+    box-shadow: 0 0 68px yellow, 0 0 73px 48px orangered, 0 51px 0 75px sienna;
+}
+.window::after {
+
+                /*Крыша*/
+
+    content: '';
+    position: absolute;
+    left: -142px;
+    top: -479px;
+    border: 192px solid transparent;
+    border-bottom: 252px solid slategray;
+
+                /*Дым*/
+
+    background-image: url(https://i.ibb.co/q7h4Grk/Z8Dx.gif);
+    background-position-x: -35px;
+    background-position-y: -116px;
+    background-size: 280px;
+    background-repeat: no-repeat;
+}
+.window::before {
+
+                /*Труба*/
+
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 150px;
+    top: -211px;
+    left: 135px;
+    border: 1px solid dimgrey;
+    border-radius: 23px;
+    background-color: dimgrey;
+}
+svg {
+    margin-top: 213px;
+}
