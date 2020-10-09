@@ -1,0 +1,164 @@
+
+body {
+  margin: 0;
+}
+
+.back {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  background: 
+      /*Звезды*/
+    radial-gradient(white 0%, transparent 70%) no-repeat 1220px 95px / 4px 4px,
+    radial-gradient(white 0%, transparent 70%) no-repeat 1210px 105px / 6px 6px,
+    radial-gradient(white 0%, transparent 70%) no-repeat 1100px 145px / 6px 6px,
+    radial-gradient(white 0%, transparent 70%) no-repeat 1070px 25px / 6px 6px,
+    radial-gradient(white 0%, transparent 70%) no-repeat 910px 95px / 6px 6px,
+    radial-gradient(white 0%, transparent 70%) no-repeat 840px 15px / 4px 4px,
+    radial-gradient(white 0%, transparent 70%) no-repeat 810px 35px / 6px 6px,
+    radial-gradient(white 0%, transparent 70%) no-repeat 760px 145px / 4px 4px,
+    radial-gradient(white 0%, transparent 70%) no-repeat 685px 85px / 6px 6px,
+    radial-gradient(white 0%, transparent 70%) no-repeat 590px 90px / 4px 4px,
+    radial-gradient(white 0%, transparent 70%) no-repeat 540px 75px / 6px 6px,
+    radial-gradient(white 0%, transparent 70%) no-repeat 410px 15px / 6px 6px,
+    radial-gradient(white 0%, transparent 70%) no-repeat 390px 55px / 4px 4px,
+    radial-gradient(white 0%, transparent 70%) no-repeat 300px 45px / 4px 4px,
+    radial-gradient(white 0%, transparent 70%) no-repeat 280px 115px / 6px 6px,
+    radial-gradient(white 0%, transparent 70%) no-repeat 110px 145px / 6px 6px,
+    radial-gradient(white 0%, transparent 70%) no-repeat 90px 160px / 4px 4px,
+    radial-gradient(white 0%, transparent 70%) no-repeat 170px 55px / 6px 6px,
+    radial-gradient(white 0%, transparent 70%) no-repeat 70px 130px / 4px 4px,
+    radial-gradient(white 0%, transparent 70%) no-repeat 10px 10px / 4px 4px,
+      /*Фон*/
+    linear-gradient(#063365 0%, purple 70%, white 70%, rgb(163, 177, 197) 100%); 
+}
+
+.back::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 700px;
+  background: 
+    /*Мерцающие звезды*/
+    radial-gradient(white 0%, transparent 70%) no-repeat 165px 50px / 15px 15px,
+    radial-gradient(white 0%, transparent 70%) no-repeat 405px 10px / 15px 15px,
+    radial-gradient(white 0%, transparent 70%) no-repeat 680px 80px / 15px 15px,
+    radial-gradient(white 0%, transparent 70%) no-repeat 1095px 140px / 15px 15px;
+  animation: stars 0.5s ease-in infinite alternate;
+}
+
+@keyframes stars {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.snowman {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  width: 500px;
+  height: 600px;
+  background:
+      /*Ведерко*/
+    linear-gradient(65deg, rgb(190, 190, 190) 0%, rgb(39, 39, 39) 65%, transparent 66%) no-repeat 53.5% 130px / 45px 55px,
+    linear-gradient(115deg, transparent 34%, rgb(70, 70, 70) 35%, rgb(196, 196, 196) 100%) no-repeat 45.5% 130px / 45px 55px,
+      /*Морковка*/
+    linear-gradient(170deg, orange 30%, orangered 50%, transparent 53%) no-repeat 55% 215px / 50px 15px, 
+      /*Рот*/
+    radial-gradient(black 70%, transparent 75%) no-repeat 54% 232px / 5px 5px,
+    radial-gradient(black 70%, transparent 75%) no-repeat 52% 240px / 5px 5px,
+    radial-gradient(black 70%, transparent 75%) no-repeat 50% 242px / 5px 5px,
+    radial-gradient(black 70%, transparent 75%) no-repeat 48% 240px / 5px 5px,
+    radial-gradient(black 70%, transparent 75%) no-repeat 46% 232px / 5px 5px,
+      /*Глаза*/
+    radial-gradient(black 70%, transparent 75%) no-repeat 54% 199px / 10px 10px,
+    radial-gradient(black 70%, transparent 75%) no-repeat 46% 199px / 10px 10px,
+      /*Пуговицы*/
+    radial-gradient(black 70%, transparent 75%) no-repeat center 320px / 10px 10px,
+    radial-gradient(black 70%, transparent 75%) no-repeat center 300px / 10px 10px,
+    radial-gradient(black 70%, transparent 75%) no-repeat center 280px / 10px 10px, 
+      /*Тело*/
+    radial-gradient(white 62%, transparent 71%) no-repeat 49% 168px / 100px 100px,
+    radial-gradient(darkcyan 70%, transparent 71%) no-repeat center 170px / 100px 100px,
+    radial-gradient(darkcyan 0%, transparent 70%) no-repeat 52% 175px / 85px 115px,
+    radial-gradient(white 62%, transparent 71%) no-repeat 49% 238px / 150px 150px,
+    radial-gradient(darkcyan 70%, transparent 71%) no-repeat center 240px / 150px 150px,
+    radial-gradient(darkcyan 0%, transparent 70%) no-repeat 52% 250px / 140px 165px,
+    radial-gradient(white 62%, transparent 71%) no-repeat 49% 349px / 200px 200px,
+    radial-gradient(darkcyan 70%, transparent 71%) no-repeat center 350px / 200px 200px,
+    radial-gradient(black 0%, transparent 70%) no-repeat 52% 395px / 190px 180px,
+      /*Руки*/
+    linear-gradient(-100deg, transparent 46%, brown 47%, rgb(58, 15, 15) 53%, transparent 54%) no-repeat 100px 260px / 60px 90px,
+    linear-gradient(to left top, transparent 46%,rgb(58, 15, 15) 47%, brown 53%, transparent 54%) no-repeat 140px 290px / 40px 60px,
+    linear-gradient(to right top, transparent 46%,rgb(58, 15, 15) 47%, brown 53%, transparent 54%) no-repeat 105px 265px / 20px 20px,
+    linear-gradient(to right bottom, transparent 46%,rgb(58, 15, 15) 47%, brown 53%, transparent 54%) no-repeat 125px 265px / 20px 20px,
+    linear-gradient(to right top, transparent 46%, brown 47%, rgb(58, 15, 15) 53%, transparent 54%) no-repeat 310px 270px / 65px 40px,
+    linear-gradient(to right bottom, transparent 46%, brown 47%, rgb(58, 15, 15) 53%, transparent 54%) no-repeat 310px 310px / 65px 40px;
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.863));
+}
+
+.house {
+  position: absolute;
+  left: 650px;
+  top: 70px;
+  width: 500px;
+  height: 550px;
+  background: 
+      /*Окно*/
+    linear-gradient(to right bottom,  rgb(211, 106, 19) 0%, rgb(211, 183, 60) 100%) no-repeat 218px 373px / 35px 35px,
+    linear-gradient(to right bottom,  rgb(211, 106, 19) 0%, rgb(211, 183, 60) 100%) no-repeat 178px 373px / 35px 35px,
+    linear-gradient(to right bottom,  rgb(211, 106, 19) 0%, rgb(211, 183, 60) 100%) no-repeat 218px 333px / 35px 35px,
+    linear-gradient(to right bottom,  rgb(211, 106, 19) 0%, rgb(211, 183, 60) 100%) no-repeat 178px 333px / 35px 35px,
+    linear-gradient(rgb(48, 25, 11),rgb(48, 25, 11)) no-repeat 173px 328px / 85px 85px,
+    linear-gradient(rgb(97, 50, 23), rgb(97, 50, 23)) no-repeat 165px 320px / 100px 100px,
+      /*Крыша*/
+    linear-gradient(to right top, rgb(71, 57, 41) 0%, rgb(49, 37, 24) 50%, transparent 51%) no-repeat 215px 100px / 150px 150px, 
+    linear-gradient(to left top, rgb(71, 57, 41) 0%, rgb(49, 37, 24) 50%, transparent 51%) no-repeat 65px 100px / 150px 150px, 
+    linear-gradient(to left, #1b0e01 0%, #381e02 100%) no-repeat 140px 105px / 40px 70px,
+      /*Стены*/
+    linear-gradient(160deg, rgb(49, 37, 24) 0%, transparent 30%) no-repeat 90px 250px / 250px 300px,
+    repeating-linear-gradient(to bottom, #8c6d3d 0px, #ded8bd 15px, #381e02 30px) no-repeat 90px 250px / 250px 300px,
+    linear-gradient(135deg, transparent 40px, #221201 40px, #381e02 255px, transparent 255px) no-repeat 340px 190px / 40px 360px;
+  filter: drop-shadow(0 0 10px rgba(211, 183, 60, 0.822));
+  box-shadow: -35px 130px 15px -130px black;
+}
+
+ .house::before { /*Боковая часть крыши*/
+  content: "";
+  position: absolute;
+  left: 281px;
+  top: 51px;
+  width: 50px;
+  height: 210px;
+  background: rgb(49, 37, 24); 
+  transform: rotate(-45deg);
+  box-shadow: inset 5px -5px 20px 0 rgb(27, 21, 14);
+}  
+
+.house::after { /*Дым*/
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: -60px;
+  left: 30px;
+  background: radial-gradient(gray 0%, transparent 70%) no-repeat 20px 10px / 90px 50px,
+  radial-gradient(gray 0%, transparent 70%) no-repeat 0px 70px / 70px 40px,
+  radial-gradient(gray 0%, transparent 70%) no-repeat 50px 120px / 60px 30px;
+  animation: smoke 4s ease alternate infinite;
+}
+
+@keyframes smoke {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
